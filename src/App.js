@@ -6,18 +6,15 @@ import Starred from "./pages/Starred";
 
 function App() {
   return (
-    <div>
-      <Navs />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/starred">
-          <Starred />
-        </Route>
-        <Route>Page not foud : ERROR 404</Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/starred">
+        <Starred />
+      </Route>
+      <Route>Page not foud : ERROR 404</Route>
+    </Switch>
   );
 }
 
